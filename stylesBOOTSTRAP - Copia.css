@@ -1,0 +1,104 @@
+/* Estilos gerais do body */
+body {
+    background-color: #9f8dbd76;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #656D4E;
+    font-family: 'Be Vietnam', sans-serif;
+    margin: 0;
+}
+
+/* Adiciona espaçamento nas laterais do container principal */
+.site-container {
+    margin: 0 20px;
+}
+
+/* Estilos da barra de navegação */
+.navbar {
+    background-color: #9F8DBD;
+    margin: 0 0 2px 0;
+    border-radius: 4px;
+}
+
+/* Estilos do link da marca na barra de navegação */
+.navbar-brand {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Estilos dos links na barra de navegação */
+.navbar-nav .nav-link {
+    color: #FFFFFF;
+}
+
+/* Estilos do Jumbotron */
+.jumbotron {
+    background-color: #E19E06;
+    color: #FFFFFF;
+    padding: 80px 0;
+}
+
+/* Estilos do título no Jumbotron */
+.jumbotron h1 {
+    font-family: 'Trirong', serif;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+/* Estilos do texto no Jumbotron */
+.jumbotron p {
+    font-size: 18px;
+}
+
+/* Estilos dos cards */
+.card {
+    background-color: #9F8DBD;
+    color: #FFFFFF;
+    border: none;
+    margin-bottom: 20px;
+}
+
+/* Estilos do título nos cards */
+.card-title {
+    font-family: 'Trirong', serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Estilos do texto nos cards */
+.card-text {
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 16px;
+}
+
+/* Estilos do container fluido */
+.container-fluid {
+    padding: 50px 0;
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #656D4E;
+    color: #FFFFFF;
+    padding: 20px 0;
+    border-radius: 2px;
+}
+
+/* Media query para iPhones e Samsung Galaxy S */
+@media only screen and (max-device-width: 375px) and (max-device-height: 812px),
+       only screen and (max-device-width: 375px) and (max-device-height: 667px) {
+    /* Adapte os estilos conforme necessário para dispositivos menores */
+    .jumbotron {
+        padding: 60px 0;
+    }
+
+    .jumbotron h1 {
+        font-size: 36px;
+    }
+
+    .jumbotron p {
+        font-size: 16px;
+    }
+}

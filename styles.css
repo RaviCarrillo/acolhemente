@@ -1,0 +1,253 @@
+/* Estilos adicionais para flipcard */
+.card-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease-in-out;
+    height: 200px;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    background-color: #9F8DBD; /* Mantendo a cor de fundo */
+    
+}
+
+.front {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(180deg);
+}
+
+.card-title {
+    font-family: 'Trirong', serif;
+    font-size: 1.2em; /* Usando unidade 'em' para ajustar com base na fonte padrão */
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #FFFFFF; /* Mantendo a cor do texto */
+}
+
+.card-text {
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 0.8em; /* Ajustando o tamanho da fonte do texto */
+    margin: 0 10px;
+    color: #FFFFFF; /* Mantendo a cor do texto */
+    background-color: #9F8DBD; /* Mantendo a cor de fundo */
+    border-radius: 5px;
+
+}
+
+/* Estilos adicionais para o resto do documento */
+body {
+    background-color: #9f8dbd76;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #656D4E;
+    font-family: 'Be Vietnam', sans-serif;
+    margin: 0;
+}
+
+.site-container {
+    margin: 0 20px;
+}
+
+/* Estilos da barra de navegação */
+.navbar {
+    background-color: #9F8DBD;
+    margin: 0;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Estilos do link da marca na barra de navegação */
+.navbar-brand {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Estilos dos links na barra de navegação */
+.navbar-links {
+    display: flex;
+}
+
+.navbar-links a {
+    color: #FFFFFF;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.jumbotron {
+    margin-top: 2px;
+    background-color: #E19E06;
+    color: #FFFFFF;
+    padding: 60px 0;
+    border-radius: 2px;
+}
+
+.jumbotron h1 {
+    font-family: 'Trirong', serif;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.jumbotron p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: #9F8DBD;
+    color: #FFFFFF;
+    border: none;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-basis: calc(28.3333% - 10px); /* Reduzindo o espaçamento entre os cards */
+    padding: 20px; /* Adicionando margem interna ao card */
+    text-align: center;
+    height: 100%; /* Alterando para altura automática */
+    border-radius: 5px;
+}
+
+.card-title {
+    font-family: 'Trirong', serif;
+    font-size: 1.2em; /* Usando unidade 'em' para ajustar com base na fonte padrão */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 0.8em; /* Ajustando o tamanho da fonte do texto */
+    margin: 0 10px;
+}
+
+.card-form {
+    background-color: #9F8DBD;
+    color: #FFFFFF;
+    border: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Adicionando margem interna ao card */
+    text-align: center;
+    height: 100%; /* Alterando para altura automática */
+    border-radius: 2px;
+}
+
+.container {
+    padding: 50px 0;
+}
+
+.alinhamentocard {
+    padding: 36.5px 0px;
+}
+
+footer {
+    background-color: #656D4E;
+    color: #FFFFFF;
+    padding: 20px 0;
+    border-radius: 2px;
+    text-align: center;
+}
+
+/* Media query para exibir os cards abaixo do outro em resoluções menores */
+@media only screen and (max-width: 768px) {
+    .card {
+        flex-basis: calc(100% - 20px);
+    }
+
+    .container {
+        flex-direction: column; /* Alterando a direção do flex para coluna em telas menores */
+    }
+}
+
+/* Estilos para a página de contato */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info {
+    flex-basis: calc(50% - 20px);
+    font-size: 1.5em;
+    text-align: left;
+}
+
+.contact-info h2 {
+    flex-basis: calc(50% - 20px);
+    font-size: 2em;
+    text-align: center;
+}
+
+.contact-form {
+    flex-basis: calc(50% - 20px);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 10px;
+    font-size: 1em; /* Tamanho da fonte ajustado */
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%; /* Preencher a largura disponível */
+    box-sizing: border-box; /* Evitar que as bordas e o preenchimento afetem a largura total */
+    border-radius: 10px;
+}
+
+.contact-form button {
+    background-color: #E19E06;
+    color: #FFFFFF;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 10px;
+}
+
+/* Estilos adicionais para tornar o formulário mais atraente */
+.contact-form label,
+.contact-form button {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #656D4E;
+    color: #FFFFFF;
+}

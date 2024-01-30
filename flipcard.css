@@ -1,0 +1,48 @@
+/* Estilos adicionais para flipcard */
+.card-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    background-color: #9F8DBD; /* Mantendo a cor de fundo */
+}
+
+.front {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(180deg);
+}
+
+.card-title {
+    font-family: 'Trirong', serif;
+    font-size: 1.2em; /* Usando unidade 'em' para ajustar com base na fonte padrão */
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #FFFFFF; /* Mantendo a cor do texto */
+}
+
+.card-text {
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 0.8em; /* Ajustando o tamanho da fonte do texto */
+    margin: 0 10px;
+    color: #FFFFFF; /* Mantendo a cor do texto */
+}
