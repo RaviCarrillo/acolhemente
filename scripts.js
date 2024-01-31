@@ -1,7 +1,5 @@
-$(document).ready(function () {
-    $('#navbarToggle').click(function () {
-        $('#navbarLinks').toggleClass('show');
-    });
+document.querySelector('.navbar-toggler').addEventListener('click', function () {
+    document.querySelector('.navbar-links').classList.toggle('active');
 });
 
 function toggleCardRotation(card) {
