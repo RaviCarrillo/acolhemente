@@ -110,6 +110,13 @@ body {
     }
 }
 
+@media only screen and (max-width: 768px) {
+    /* Altere a rotação para ocorrer no toque */
+    .card:active .card-inner {
+        transform: rotateY(180deg);
+    }
+}
+
 /* Estilos do jumbotron */
 .jumbotron {
     margin-top: 2px;
