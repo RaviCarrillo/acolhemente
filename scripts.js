@@ -5,6 +5,5 @@ $(document).ready(function () {
 });
 
 function toggleCardRotation(card) {
-    // Adiciona ou remove a classe 'flipped' do card
-    card.classList.toggle('flipped');
+    card.querySelector('.card-inner').classList.toggle('flipped');
 }
